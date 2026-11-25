@@ -74,8 +74,14 @@ header{display:flex;justify-content:space-between;align-items:center;gap:10px;pa
 /* web */
 .code{flex:1;background:#14161c;color:#d6e2f0;border-radius:14px;padding:14px;font-size:.82rem;line-height:1.6;min-height:150px;white-space:pre-wrap;word-break:break-word;border:2px solid var(--ink)}
 .code .tg{color:#06d6a0}.code .at{color:#ffd23f}.code .tx{color:#fff}
+/* Code qui s'écrit : 100 % CSS, marche même si le JavaScript est bloqué */
+.code .ln{display:block;white-space:pre;overflow:hidden;width:0;max-width:100%;border-right:.55em solid transparent;animation:type var(--d) steps(var(--n)) var(--t) forwards,caret var(--d) step-end var(--t)}
+.code .ln:last-child{animation:type var(--d) steps(var(--n)) var(--t) forwards,blink 1s step-end calc(var(--t) + var(--d)) infinite}
+@keyframes type{0%{width:0}99%,100%{width:calc(var(--n) * 1ch + .55em)}}
+@keyframes caret{0%,100%{border-right-color:var(--web)}}
 .code .cur{display:inline-block;width:.55em;height:1em;background:var(--web);vertical-align:-.15em;animation:blink 1s steps(1) infinite}
-@keyframes blink{50%{opacity:0}}
+@keyframes blink{0%,49%{border-right-color:var(--web)}50%,100%{border-right-color:transparent}}
+.code .cur{animation-name:blink-op}@keyframes blink-op{50%{opacity:0}}
 /* batterie */
 .pads{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1}
 .pads button{border:2.5px solid var(--ink);border-radius:14px;font:inherit;font-weight:700;cursor:pointer;padding:10px 6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:#fff;box-shadow:3px 3px 0 var(--ink);transition:transform .06s}
@@ -138,7 +144,7 @@ body{padding-bottom:110px}
 .seg button.on{background:var(--ink);color:var(--bg)}
 @media (max-width:980px){.bento{grid-template-columns:repeat(2,1fr)}.w3,.w4{grid-column:span 2}}
 @media (max-width:600px){.bento{grid-template-columns:1fr}.w2,.w3,.w4{grid-column:span 1}.hb .btn-ink span{display:none}.anno{position:static;transform:rotate(-2deg);text-align:left;align-self:flex-start}.logo span{display:none}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important}.diag .bar i{width:100%}.diag .ok{opacity:1}.hero h1 .ul path{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.diag .bar i{width:100%}.diag .ok{opacity:1}.hero h1 .ul path{stroke-dashoffset:0}.code .ln{width:auto}}
 
 /* =========================================================
    PAGES INTÉRIEURES (CV, Services, Disponibilités, Projets…)
