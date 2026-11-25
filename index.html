@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr" data-mode="jour">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jhenoc Akpa | L'atelier</title>
+<meta name="description" content="Jhenoc Akpa, étudiant en BTS CIEL. Je dessine, je répare, je code et je joue de la batterie. Disponible pour une alternance ou un stage.">
+<meta name="theme-color" content="#1b1b1f">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Caveat:wght@600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="accueil">
+<div class="wrap">
+  <header>
+    <a class="logo" href="index.html" aria-label="J-HenoTech, retour à l'accueil"><b>JH</b><span>J-HenoTech</span></a>
+    <div class="hb">
+      <a class="btn btn-ink" href="cv.html">⬇ <span>Mon CV</span></a>
+      <button class="btn btn-fix" type="button" data-open-menu>Menu ☰</button>
+    </div>
+  </header>
+
+  <main class="bento">
+    <section class="t hero w3" id="accueil">
+      <p class="hand anno">BTS CIEL<br>1re année ↓</p>
+      <a class="chip" href="disponibilites.html"><i></i>Disponible pour une alternance ou un stage</a>
+      <h1>Jhenoc Akpa<svg class="ul" viewBox="0 0 400 18" preserveAspectRatio="none"><path d="M4 12 C 80 2, 160 16, 240 8 S 360 4, 396 10"/></svg></h1>
+      <p class="roles">Je <span class="r-draw">dessine</span>, je <span class="r-fix">répare</span>, je <span class="r-web">code</span> et je joue de la <span class="r-drum">batterie</span>. Étudiant en BTS CIEL, je cherche une entreprise où mettre tout ça en pratique.</p>
+      <div class="cta">
+        <a class="btn btn-draw" href="cv.html">📄 Voir mon CV</a>
+        <a class="btn" href="projets.html">Mes projets →</a>
+      </div>
+    </section>
+    <div class="t photo">
+      <div class="frame"><img src="images/photo-j-h.jpg" alt="Portrait de Jhenoc Akpa" onerror="this.remove()">JA</div>
+      <svg class="doodle d1" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-5L16 4l4 4L9 19z"/><path d="M14 6l4 4"/></svg>
+      <svg class="doodle d2" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6.5a4 4 0 0 0-5 5L4 17l3 3 5.5-5.5a4 4 0 0 0 5-5L15 12l-3-3z"/></svg>
+      <svg class="doodle d3" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+      <svg class="doodle d4" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="9" rx="8" ry="3"/><path d="M4 9v7c0 1.7 3.6 3 8 3s8-1.3 8-3V9M5 3l6 5M19 3l-6 5"/></svg>
+    </div>
+
+    <section class="t uni u-draw" id="atelier">
+      <div class="head"><svg viewBox="0 0 24 24"><path d="M4 20l1-5L16 4l4 4L9 19z"/><path d="M14 6l4 4"/></svg><div><h2 style="margin:0">01 · Art</h2><h3>Je dessine</h3></div></div>
+      <p>Croquis, affiches, visuels : le dessin est ma façon de réfléchir avant de construire.</p>
+      <div class="pad-draw"><canvas id="sketch" aria-label="Zone de dessin libre"></canvas><span class="hand hint" id="hint">à vous, dessinez ici ✎</span><button type="button" id="clear">effacer</button></div>
+    </section>
+    <section class="t uni u-fix">
+      <div class="head"><svg viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0-5 5L4 17l3 3 5.5-5.5a4 4 0 0 0 5-5L15 12l-3-3z"/></svg><div><h2 style="margin:0">02 · Atelier</h2><h3>Je répare</h3></div></div>
+      <p>PC portables, téléphones, installations Windows : appris en stage chez Madina Phone.</p>
+      <ul class="diag mono" aria-label="Étapes d'une réparation">
+        <li><span>Diagnostic</span><span class="bar"><i></i></span><span class="ok">✓</span></li>
+        <li><span>Démontage</span><span class="bar"><i></i></span><span class="ok">✓</span></li>
+        <li><span>Réparation</span><span class="bar"><i></i></span><span class="ok">✓</span></li>
+        <li><span>Test</span><span class="bar"><i></i></span><span class="ok">✓</span></li>
+      </ul>
+      <a class="btn btn-fix" href="services.html#windows" style="align-self:flex-start">Tarifs Windows →</a>
+    </section>
+    <section class="t uni u-web">
+      <div class="head"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg><div><h2 style="margin:0">03 · Écran</h2><h3>Je code</h3></div></div>
+      <p>Des sites en HTML, CSS et JavaScript, comme celui-ci, et des sites vitrines pour HenoTech.</p>
+      <div class="code mono" id="code" aria-hidden="true"></div>
+      <a class="btn" href="services.html#site" style="align-self:flex-start;background:var(--web);color:#1b1b1f">Tarifs sites →</a>
+    </section>
+    <section class="t uni u-drum">
+      <div class="head"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="9" rx="8" ry="3"/><path d="M4 9v7c0 1.7 3.6 3 8 3s8-1.3 8-3V9M5 3l6 5M19 3l-6 5"/></svg><div><h2 style="margin:0">04 · Rythme</h2><h3>Je joue de la batterie</h3></div></div>
+      <p>Tapez sur les pads, ou utilisez les touches du clavier.</p>
+      <div class="pads" id="pads">
+        <button type="button" data-s="kick">Grosse caisse<small>Q</small></button>
+        <button type="button" data-s="snare">Caisse claire<small>S</small></button>
+        <button type="button" data-s="hat">Charleston<small>D</small></button>
+        <button type="button" data-s="tom">Tom<small>F</small></button>
+      </div>
+      <div class="seq"><button type="button" id="play">▶ Rythme</button><div class="steps" id="steps"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    </section>
+
+    <section class="t about w2" id="a-propos">
+      <h2>À propos</h2>
+      <p>Bac pro CIEL obtenu en 2026, je suis maintenant en 1re année de BTS CIEL (Cybersécurité, Informatique et Réseaux, Électronique). J'ai fait environ cinq mois de stages et j'ai vu que j'apprends beaucoup plus vite sur le terrain. C'est pour ça que je cherche une alternance ou un stage.</p>
+      <span class="hand">technique le jour, créatif tout le temps.</span>
+      <a class="btn" href="cv.html" style="margin-top:12px">Lire mon CV complet →</a>
+    </section>
+    <section class="t w2" id="competences">
+      <h2>Compétences</h2>
+      <ul class="tags">
+        <li class="c2">Maintenance PC</li><li class="c2">Installation Windows</li><li class="c2">Réparation téléphones</li>
+        <li class="c3">HTML / CSS / JS</li><li class="c3">Python</li><li class="c3">Java</li><li class="c3">Git</li>
+        <li>Électronique numérique</li><li>Soudure</li><li>Proteus</li><li>Bases réseaux</li>
+        <li class="c1">Dessin</li><li class="c1">Inventor</li><li class="c1">Canva</li>
+        <li class="c4">Batterie</li><li class="c4">Rigueur</li><li class="c4">Autonomie</li>
+      </ul>
+    </section>
+
+    <a class="t proj" href="projets.html#dcb"><span class="tag" style="background:var(--fix);color:#1b1b1f">BTS CIEL</span><img src="images/projet-dcb-1.jpg" alt="Carte du kit DCB 7 segments montée" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;border:2px solid var(--ink);background:#fff"><h3>Kit convertisseur DCB 7 segments</h3><span class="st">Voir le projet →</span></a>
+    <a class="t proj" href="projets.html#gwc"><span class="tag" style="background:var(--draw);color:#fff">Graphisme</span><img src="images/1.png" alt="Affiche Piano pour Tous" style="width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;border-radius:12px;border:2px solid var(--ink)"><h3>Affiches GWC Musique</h3><span class="st">Voir le projet →</span></a>
+    <a class="t proj" href="projets.html#portfolio"><span class="tag" style="background:var(--web);color:#1b1b1f">Web</span><img src="images/apercu-site.png" alt="Aperçu de ce site" style="width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;border-radius:12px;border:2px solid var(--ink)"><h3>Ce portfolio</h3><span class="st">Voir le projet →</span></a>
+    <a class="t" href="disponibilites.html" style="background:var(--drum);color:#fff;display:flex;flex-direction:column;gap:10px"><h2 style="color:#fff;opacity:.8">Disponibilités</h2><p style="font-size:2rem;font-weight:700;line-height:1">17 h à 21 h</p><p>du lundi au vendredi</p><span class="st" style="margin-top:auto;font-weight:700">Voir les horaires →</span></a>
+
+    <a class="t svc w2" href="services.html#site" style="background:var(--web);color:#1b1b1f"><h2 style="color:inherit;opacity:.7">HenoTech · Web</h2><h3>Site vitrine</h3><p>Une ou plusieurs pages, lisibles sur mobile et ordinateur.</p><span class="price">À partir de <span class="price-tag">150 €</span></span><span style="font-weight:700">Voir les tarifs →</span></a>
+    <a class="t svc w2" href="services.html#windows" style="background:var(--fix);color:#1b1b1f"><h2 style="color:inherit;opacity:.7">HenoTech · Atelier</h2><h3>Installation de Windows</h3><p>Mises à jour, pilotes, logiciels, sauvegarde de vos fichiers.</p><span class="price">À partir de <span class="price-tag">40 €</span></span><span style="font-weight:700">Voir les tarifs →</span></a>
+
+    <section class="t contact w4" id="contact">
+      <div><h2>Contact</h2><p class="big">Une alternance ou un stage <span class="hand">à proposer ?</span></p></div>
+      <div class="cta"><a class="btn btn-fix" href="mailto:contact.henotech@gmail.com">✉ M'écrire</a><a class="btn" href="cv.html" style="color:var(--ink)">📄 Mon CV</a><a class="btn" href="https://www.linkedin.com/in/jean-henoc-akpa-19a39032a/" target="_blank" rel="noopener" style="color:var(--ink)">LinkedIn</a><a class="btn" href="https://github.com/Jean-Henoc005" target="_blank" rel="noopener" style="color:var(--ink)">GitHub</a></div>
+    </section>
+  </main>
+
+  <footer><span>© <span class="year">2026</span> Jhenoc Akpa · J-HenoTech</span><nav><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Confidentialité</a></nav></footer>
+</div>
+
+<nav class="dock" aria-label="Navigation principale"><ul>
+  <li><a href="index.html" data-p="accueil" data-c="draw"><svg viewBox="0 0 24 24"><path d="m3 11 9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg>Accueil</a></li>
+  <li><a href="projets.html" data-p="projets" data-c="web"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Projets</a></li>
+  <li><a href="cv.html" data-p="cv" class="cvb"><svg viewBox="0 0 24 24"><path d="M14 3H6v18h12V7zM14 3v4h4M9 12h6M9 16h6"/></svg>CV</a></li>
+  <li><a href="services.html" data-p="services" data-c="fix"><svg viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0-5 5L4 17l3 3 5.5-5.5a4 4 0 0 0 5-5L15 12l-3-3z"/></svg>Tarifs</a></li>
+  <li><a href="disponibilites.html" data-p="dispo" data-c="drum"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Dispo</a></li>
+  <li><button type="button" data-open-menu><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>Menu</button></li>
+</ul></nav>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Menu">
+  <div class="head"><strong style="font-size:1.3rem">Menu</strong><button class="btn" id="close" type="button" aria-label="Fermer">✕</button></div>
+  <div><h4>Pages</h4>
+    <nav>
+      <a href="index.html" data-p="accueil">Accueil</a><a href="index.html#atelier">L'atelier</a><a href="projets.html" data-p="projets">Projets</a><a href="cv.html" data-p="cv">Mon CV</a>
+      <a href="services.html" data-p="services">Services et tarifs</a><a href="disponibilites.html" data-p="dispo">Disponibilités</a><a href="index.html#a-propos">À propos</a><a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+  <div><h4>Paramètres · Ambiance</h4><div class="seg" id="mode"><button type="button" data-v="jour">☀ Papier</button><button type="button" data-v="nuit">☾ Plan bleu</button></div></div>
+  <div><h4>Paramètres · Son de la batterie</h4><div class="seg" id="sound"><button type="button" data-v="1">🔊 Activé</button><button type="button" data-v="0">🔇 Coupé</button></div></div>
+  <a class="btn btn-ink" href="CV-Jean-Henoc-Akpa.pdf" download style="justify-content:center">⬇ Télécharger mon CV (PDF)</a>
+  <p style="font-size:.85rem"><a href="mentions-legales.html" style="text-decoration:underline">Mentions légales</a> · <a href="confidentialite.html" style="text-decoration:underline">Confidentialité</a></p>
+</aside>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image agrandie">
+  <button class="btn x" type="button" aria-label="Fermer">✕</button>
+  <img src="data:," alt="">
+  <p></p>
+  <div class="nav"><button class="btn prev" type="button">← Précédente</button><button class="btn next" type="button">Suivante →</button></div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
