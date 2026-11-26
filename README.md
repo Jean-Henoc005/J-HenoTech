@@ -3,7 +3,7 @@
 Portfolio personnel et vitrine de mes services HenoTech. Je suis étudiant en 1re année de BTS CIEL (Cybersécurité, Informatique et Réseaux, Électronique).
 
 Le site mélange mes quatre activités : le dessin, la réparation et la maintenance, la création de sites web et la batterie.
-
+      
 ## Pages
 
 | Page | Contenu |
