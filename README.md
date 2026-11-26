@@ -5,7 +5,7 @@ Portfolio personnel et vitrine de mes services HenoTech. Je suis étudiant en 1r
 Le site mélange mes quatre activités : le dessin, la réparation et la maintenance, la création de sites web et la batterie.
       
 ## Pages
-
+     
 | Page | Contenu |
 |---|---|
 | `index.html` | Accueil : présentation, zone de dessin, pads de batterie jouables, aperçu des projets |
